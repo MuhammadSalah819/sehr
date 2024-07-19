@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: none;
+}
+
+body {
+    background: rgb(87, 255, 87, 0.5);
+    color: white;
+}
+
+.player {
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 55px;
+    transform: translate(-50%, -50%);
+}
+
+.panel {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.panel__line {
+    width: 100%;
+    height: 10px;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.panel__line-current {
+    height: 100%;
+    background: rgba(249, 32, 32, 0.716);
+    width: 0;
+}
+
+.panel__left {
+    display: flex;
+    align-items: center;
+}
+
+.play {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.mute {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.volume__slider {
+    margin-left: 10px;
+}
+
+.volume {
+    width: 29px;
+    overflow: hidden;
+    display: flex;
+    transition: 300ms;
+}
+
+.volume:hover {
+    width: 187.13px;
+}
+
+.video__time {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+
+.video__current {
+    margin-right: 3px;
+}
+
+.video__duration {
+    margin-left: 3px;
+}
+
+.video__speed {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.video__speed:focus {
+    background: rgb(138, 128, 128);
+}
+
+.fullscreen {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.panel__right {
+    display: flex;
+    align-items: center;
+}
